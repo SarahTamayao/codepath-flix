@@ -16,27 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-2q-pil">
-                                <rect key="frame" x="111" y="233" width="192" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-yI-VxM">
-                                <rect key="frame" x="123" y="433" width="168" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-yI-VxM">
+                                <rect key="frame" x="154" y="433" width="107" height="49"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Harshad Barapatre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-qt-e0m">
-                                <rect key="frame" x="79" y="789" width="257" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harshad Barapatre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-qt-e0m">
+                                <rect key="frame" x="154" y="799.5" width="106" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-2q-pil">
+                                <rect key="frame" x="138" y="286" width="138" height="139"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fZ7-yI-VxM" firstAttribute="top" secondItem="kOG-2q-pil" secondAttribute="bottom" constant="8" id="Bjz-2h-P0l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0R-qt-e0m" secondAttribute="bottom" constant="48" id="NEc-dJ-YHq"/>
+                            <constraint firstItem="fZ7-yI-VxM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zq6-r9-MuG"/>
+                            <constraint firstItem="kOG-2q-pil" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="242" id="lnk-BT-Wo2"/>
+                            <constraint firstItem="h0R-qt-e0m" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nM6-97-njF"/>
+                            <constraint firstItem="kOG-2q-pil" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yjt-4v-Lg0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
