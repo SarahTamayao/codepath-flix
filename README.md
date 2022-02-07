@@ -17,10 +17,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### BONUS
 - [❓] (2pt) User can view the app on various device sizes and orientations.
-- [❓] (1pt) Run your app on a real device.
+- [✅] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
 <img src="codepath-flix.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+- Working on auto-layout since I used iPhone 12 sim for the development and tried to run it on my iPhone 13 Pro Max. On my iPhone, I can see a black bar on the right side of the screen which is wasted screen real estate.
