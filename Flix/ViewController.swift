@@ -57,13 +57,31 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.flixLabel.text = title
         cell.flixSynopsis.text = synopsis
         
-        let baseUrl = "https://image.tmdb.org/t/p/w185/"
+        let baseUrl = "https://image.tmdb.org/t/p/w342/"
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         
         cell.flixImage.af.setImage(withURL: posterUrl!)
         
         return cell
+    }
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = flixMovies[indexPath.row]
+        
+        let detailViewController = segue.destination as! MovieDetailsViewController
+        detailViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
 
 

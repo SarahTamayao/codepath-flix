@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-yI-VxM">
-                                <rect key="frame" x="154" y="433" width="107" height="49"/>
+                                <rect key="frame" x="153.5" y="433" width="107" height="49"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
