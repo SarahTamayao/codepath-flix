@@ -25,7 +25,7 @@ iPhone SE (Simulator)
 
 <img src="iphone-se-week2.gif" width=250><br>
 
-iPad Air (Simulator)
+iPad Air (Personal Device)
 
 <img src="ipad-air-week2.gif" width=450><br>
 
