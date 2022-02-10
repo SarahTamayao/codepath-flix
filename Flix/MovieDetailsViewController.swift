@@ -15,7 +15,6 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var movieSynopsis: UILabel!
     @IBOutlet weak var moviePoster: UIImageView!
     
-    
     var movie: [String: Any]!
     
     override func viewDidLoad() {
