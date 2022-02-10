@@ -197,7 +197,7 @@
         <scene sceneID="3XZ-7c-Miv">
             <objects>
                 <navigationController title="Collections Navigation" id="k4G-SD-Q2B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collections" image="now_playing_tabbar_item" id="KDD-TK-Ig3"/>
+                    <tabBarItem key="tabBarItem" title="Superhero" image="now_playing_tabbar_item" id="KDD-TK-Ig3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bL-Io-9aW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -259,7 +259,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="LzK-mZ-R39"/>
-                    <navigationItem key="navigationItem" title="Collections" id="DUL-nC-KdK"/>
+                    <navigationItem key="navigationItem" title="Superhero" id="DUL-nC-KdK"/>
                     <connections>
                         <outlet property="collectionView" destination="IgF-vK-HFV" id="D8K-A2-z86"/>
                     </connections>
