@@ -19,6 +19,8 @@ class CollectionDetailsViewController: UIViewController, UICollectionViewDelegat
         
         // Do any additional setup after loading the view.
         
+        self.title = genre["name"] as? String
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         

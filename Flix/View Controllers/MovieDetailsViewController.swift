@@ -8,12 +8,14 @@
 import UIKit
 import AlamofireImage
 
-class MovieDetailsViewController: UIViewController {
+class MovieDetailsViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var movieBackdrop: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieSynopsis: UILabel!
     @IBOutlet weak var moviePoster: UIImageView!
+    
+    @IBOutlet var plainView: UIView!
     
     var movie: [String: Any]!
     
@@ -22,6 +24,7 @@ class MovieDetailsViewController: UIViewController {
         
         displayImageDetails()
         // Do any additional setup after loading the view.
+        
     }
     
     func displayImageDetails() {
@@ -33,21 +36,19 @@ class MovieDetailsViewController: UIViewController {
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: "https://image.tmdb.org/t/p/w500/" + posterPath)
         moviePoster.af.setImage(withURL: posterUrl!)
+//        movieButton.af.setImage(withURL: posterUrl!)
         
         let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/original/" + backdropPath)
         movieBackdrop.af.setImage(withURL: backdropUrl!)
-        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+//    // MARK: - Navigation
+//
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//    }
 
 }

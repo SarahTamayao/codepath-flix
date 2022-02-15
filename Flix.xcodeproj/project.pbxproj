@@ -118,6 +118,45 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4F675B4427B60016007E4BA3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4F89CA1427B09C62001B3BE1 /* Main.storyboard */,
+				4F89CA1927B09C63001B3BE1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4F675B4527B60025007E4BA3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F89CA1227B09C62001B3BE1 /* ViewController.swift */,
+				4F57F08927B41F2200DFB0CE /* MovieDetailsViewController.swift */,
+				4F57F08D27B4571F00DFB0CE /* CollectionsViewController.swift */,
+				4F57F09927B5BDD900DFB0CE /* CollectionDetailsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4F675B4627B60044007E4BA3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F89CA3E27B09DAD001B3BE1 /* FlixCell.swift */,
+				4F57F09127B459E100DFB0CE /* CollectionCell.swift */,
+				4F57F09D27B5C62A00DFB0CE /* MovieCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4F675B4727B601BC007E4BA3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4F89CA0E27B09C62001B3BE1 /* AppDelegate.swift */,
+				4F89CA1027B09C62001B3BE1 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		4F89CA0227B09C62001B3BE1 = {
 			isa = PBXGroup;
 			children = (
@@ -143,19 +182,12 @@
 		4F89CA0D27B09C62001B3BE1 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
-				4F89CA0E27B09C62001B3BE1 /* AppDelegate.swift */,
-				4F89CA1027B09C62001B3BE1 /* SceneDelegate.swift */,
-				4F89CA1227B09C62001B3BE1 /* ViewController.swift */,
-				4F89CA1427B09C62001B3BE1 /* Main.storyboard */,
+				4F675B4727B601BC007E4BA3 /* Delegates */,
+				4F675B4627B60044007E4BA3 /* Cells */,
+				4F675B4427B60016007E4BA3 /* Storyboards */,
+				4F675B4527B60025007E4BA3 /* View Controllers */,
 				4F89CA1727B09C63001B3BE1 /* Assets.xcassets */,
-				4F89CA1927B09C63001B3BE1 /* LaunchScreen.storyboard */,
 				4F89CA1C27B09C63001B3BE1 /* Info.plist */,
-				4F89CA3E27B09DAD001B3BE1 /* FlixCell.swift */,
-				4F57F08927B41F2200DFB0CE /* MovieDetailsViewController.swift */,
-				4F57F08D27B4571F00DFB0CE /* CollectionsViewController.swift */,
-				4F57F09127B459E100DFB0CE /* CollectionCell.swift */,
-				4F57F09927B5BDD900DFB0CE /* CollectionDetailsViewController.swift */,
-				4F57F09D27B5C62A00DFB0CE /* MovieCollectionViewCell.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";

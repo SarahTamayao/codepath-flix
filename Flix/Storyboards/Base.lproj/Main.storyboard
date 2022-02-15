@@ -117,7 +117,7 @@
                             <constraint firstAttribute="bottom" secondItem="ry0-Ta-2rc" secondAttribute="bottom" id="xAM-j6-nr5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Latest Movies" id="PdE-9A-BCr"/>
+                    <navigationItem key="navigationItem" title="Latest" id="PdE-9A-BCr"/>
                     <connections>
                         <outlet property="tableView" destination="ry0-Ta-2rc" id="WgP-ch-s5P"/>
                     </connections>
@@ -143,6 +143,11 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgE-rr-S8Z">
                                 <rect key="frame" x="132" y="238" width="150" height="230"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="BlA-W6-rs8"/>
                                     <constraint firstAttribute="width" constant="150" id="iA4-az-tWH"/>
@@ -150,7 +155,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-0V-J2g">
-                                <rect key="frame" x="20" y="487" width="375" height="26.5"/>
+                                <rect key="frame" x="184.5" y="487" width="45" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -171,13 +176,10 @@
                             <constraint firstItem="EbL-0V-J2g" firstAttribute="centerX" secondItem="av4-VI-Fv2" secondAttribute="centerX" id="K8Y-W7-Wdd"/>
                             <constraint firstItem="EbL-0V-J2g" firstAttribute="top" secondItem="hWm-xj-Xd2" secondAttribute="bottom" constant="91" id="MwY-UH-IBS"/>
                             <constraint firstItem="MgE-rr-S8Z" firstAttribute="centerX" secondItem="av4-VI-Fv2" secondAttribute="centerX" id="X7j-Hi-ieu"/>
-                            <constraint firstItem="bqr-v0-tgM" firstAttribute="trailing" secondItem="Qg0-dN-qYK" secondAttribute="trailing" constant="20" id="XhV-Gl-2L0"/>
                             <constraint firstItem="hWm-xj-Xd2" firstAttribute="top" secondItem="av4-VI-Fv2" secondAttribute="top" id="cj0-2X-XjK"/>
                             <constraint firstItem="hWm-xj-Xd2" firstAttribute="trailing" secondItem="bqr-v0-tgM" secondAttribute="trailing" id="h1u-Iy-TDV"/>
-                            <constraint firstItem="bqr-v0-tgM" firstAttribute="trailing" secondItem="EbL-0V-J2g" secondAttribute="trailing" constant="19" id="lXv-e9-XMX"/>
                             <constraint firstItem="hWm-xj-Xd2" firstAttribute="centerX" secondItem="av4-VI-Fv2" secondAttribute="centerX" id="oeI-gf-cA3"/>
                             <constraint firstItem="hWm-xj-Xd2" firstAttribute="leading" secondItem="bqr-v0-tgM" secondAttribute="leading" id="saZ-SN-e1f"/>
-                            <constraint firstItem="EbL-0V-J2g" firstAttribute="leading" secondItem="bqr-v0-tgM" secondAttribute="leading" constant="20" id="tTi-Lk-DCa"/>
                             <constraint firstItem="Qg0-dN-qYK" firstAttribute="top" secondItem="EbL-0V-J2g" secondAttribute="bottom" constant="10.5" id="va0-kf-IF9"/>
                         </constraints>
                     </view>
@@ -187,11 +189,12 @@
                         <outlet property="moviePoster" destination="MgE-rr-S8Z" id="GJm-JQ-Dce"/>
                         <outlet property="movieSynopsis" destination="Qg0-dN-qYK" id="Is5-Q4-bUR"/>
                         <outlet property="movieTitle" destination="EbL-0V-J2g" id="y98-Id-LZw"/>
+                        <outlet property="plainView" destination="av4-VI-Fv2" id="HaB-aD-fUd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9Z-AT-b6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="865"/>
+            <point key="canvasLocation" x="989.85507246376824" y="864.50892857142856"/>
         </scene>
         <!--Collections Navigation-->
         <scene sceneID="3XZ-7c-Miv">
