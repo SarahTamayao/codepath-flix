@@ -27,7 +27,7 @@ iPhone SE (Simulator)
 
 iPad Air (Personal Device)
 
-<img src="ipad-air-week2.gif" width=450><br>
+<img src="ipad-air-week2.gif" width=250><br>
 
 ### Notes
 - ~~Working on changing the superhero screen to a genres screen which leads to another view where movies in that genre.~~
